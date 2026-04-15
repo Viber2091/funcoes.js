@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>container</h1>
+        <p id="contador">0</p>
+        <button onclick="incrementar()">incrementar</button>
+        <button onclick="Decrementar()">Decrementar</button>
+        <button onclick="Resetar()">Resetar</button>
+        
+    </div>
+
+    <script>
+        let contador = 0;
+
+        function atualizarDisplay(){
+            document.getElementById('contador').innerText = contador
+
+        }
+
+        function incrementar(){
+            contador++;
+            atualizarDisplay();
+
+
+        }
+
+        function Decrementar(){
+            if(contador > 0){
+                contador--;
+            }
+            atualizarDisplay();
+
+        }
+
+        function Resetar(){
+           contador = 0;
+           atualizarDisplay();
+
+        }
+    </script>
+</body>
+</html>

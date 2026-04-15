@@ -1,0 +1,50 @@
+
+/*garantir que o fundo cubra a tela inteira*/
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(49deg,#e900e9, #2172db, #00ff15,yellow, #ff0000, violet,pink );
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+    max-width: 300px;
+    width: 100%;
+    padding: 100px;
+    border: 2px solid #ff0000;
+    border-radius:10px;
+    background-color: #583636;
+    text-align: center;
+}
+
+h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+button{
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2172db;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: background-color 15s;
+}
+
+button:hover{
+  background-color:#00ff15 ;
+}
